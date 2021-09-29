@@ -30,9 +30,19 @@ if(b==1){
     cout<<"YES"<<"\n";
 }
 else{bool ans  = false;
-     ll no = a*b/gcd(a,b);
-     if( b%(no/b)  == 0)
-     ans = true;
+     ll no = b,in = INT_MAX; 
+    for(int i=1;i<=30;i++){
+        //cout<<a<<" "<<no<<" "<<__gcd(a,b)<<"\n";
+        
+        if(no%a == 0){
+            ans = true;
+            break;
+        }
+        no*=b;
+      
+
+        no =  no%a;
+    }
     if(ans){
         cout<<"YES"<<"\n";
     }
