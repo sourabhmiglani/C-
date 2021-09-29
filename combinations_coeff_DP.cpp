@@ -13,6 +13,8 @@ ll mod_div(ll a, ll b, ll m) {a = a % m; b = b % m; return (mod_mul(a, mminvprim
 const int mod  = 1e9 + 7;
     int nCr(int n, int r){
         // code here
+        //time comp->r*T(to compute modular division)
+        //space comp->O(r)
         if(n<r){
             return 0;
         }
