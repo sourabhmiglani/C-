@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+// it is using backtraking!!
 bool dfs(int** edges,bool* &visited,int v1,int v2,vector<int> &v,int n){
     visited[v1] = 1;
     if(v1 == v2){
