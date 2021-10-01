@@ -14,6 +14,7 @@ void DFS(vector<int>* edges,int n,int sv,bool* visited,vector<int> &f){
    
   
 }
+//Time Complexity->O(V+E)
 void BFS(vector<int>* edges,int n,int sv,bool* &visited,vector<int> &f){
     f.push_back(sv);
     queue<int> q;
